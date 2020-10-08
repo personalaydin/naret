@@ -1,0 +1,22 @@
+.imgClass{
+    width: 100%;
+    padding: -5px;
+    margin: 0%
+}
+
+.divClass{
+    padding: unset !important;
+}
+
+.xcontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+
+.align-center-on-image {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

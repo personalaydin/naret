@@ -1,0 +1,131 @@
+.page-products {
+    background-image: url('../../img/products/bg.jpg');
+    background-position: center top;
+
+    @extend .minimum-full-height;
+}
+
+.page-products__naret-kasap-urunleri-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 11.05vw;
+    width: 100%;
+    height: 100%;
+    max-width: 1275px;
+    max-height: 671px;
+    min-width: 800px;
+    min-height: 400px;
+    background: transparent url('../../img/products/naret-kasap-urunleri/bg.png') top right no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-down(xxl) {
+        right: 5vw;
+    }
+}
+
+.page-products__ileri-islenmis-urunler-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 11.05vw;
+    width: 100%;
+    height: 100%;
+    max-width: 1275px;
+    max-height: 671px;
+    min-width: 800px;
+    min-height: 400px;
+    background: transparent url('../../img/products/ileri-islenmis-urunler/bg.png') top right no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-down(xxl) {
+        right: 5vw;
+    }
+}
+
+.page-products__naret-kasap-urunleri-clone-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 21vw;
+    width: 100%;
+    height: 400%;
+    max-width: 700px;
+    max-height: 350px;
+    min-width: 418px;
+    min-height: 133px;
+    background: transparent url('../../img/kasap-parakende/bg.png') top right no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-down(xxl) {
+        right: 5vw;
+    }
+}
+
+.page-products__dondurulmus-doner-grubu-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 961px;
+    max-height: 502px;
+    min-width: 600px;
+    min-height: 300px;
+    background: transparent url('../../img/products/dondurulmus-doner-grubu/bg.png') top center no-repeat;
+    background-size: contain;
+    transform: translateX(-40%);
+
+    @include media-breakpoint-down(xxl) {
+        transform: translateX(-50%);
+    }
+}
+
+.page-products__dondurulmus-kofte-grubu-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 920px;
+    max-height: 477px;
+    min-width: 600px;
+    min-height: 300px;
+    background: transparent url('../../img/products/dondurulmus-kofte-grubu/bg.png') top center no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+
+.page-products__taze-dana-grubu-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 1232px;
+    max-height: 583px;
+    min-width: 800px;
+    min-height: 400px;
+    background: transparent url('../../img/products/taze-dana-grubu/bg.png') top center no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+
+.page-products__taze-kuzu-grubu-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 1232px;
+    max-height: 583px;
+    min-width: 800px;
+    min-height: 400px;
+    background: transparent url('../../img/products/taze-kuzu-grubu/bg.png') top center no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,148 @@
+$fontFamilyMain: sommet, sans-serif;
+$colorMain: #ba172c;
+$colorMain2: #ae1629;
+$colorDarkGray: #393939;
+$colorDarkBlue: #101920;
+$colorBlack500: #101920;
+$blue200: #909bb3;
+$blue400: #4e5f83;
+$blue500: #575873;
+$black500: #101920;
+$gray100: #f4f4f4;
+$gray400: #6e6e6e;
+
+// Bootstrap
+$body-color: #000;
+$body-bg: #fff;
+
+$headings-font-weight: 'inherit';
+
+$input-bg: #f3f3fc;
+$input-color: $blue400;
+$input-placeholder-color: $input-color;
+$input-btn-padding-y: 1.5rem;
+$input-btn-padding-x: 2rem;
+$input-btn-border-width: 0;
+$input-btn-font-size: .95rem;
+$input-border-radius: 7px;
+$label-margin-bottom: 0;
+
+$theme-colors: (
+    'main': $colorMain,
+    'main2': $colorMain2,
+    'dark-gray': $colorDarkGray,
+    'dark-blue': $colorDarkBlue,
+    'blue-200': $blue200,
+    'blue-400': $blue400,
+    'blue-500': $blue500,
+    'gray-100': $gray100,
+    'gray-400': $gray400,
+    'black-500': $black500,
+    'black': #000,
+    'white': #fff,
+);
+
+$spacer: 1rem;
+$spacers: (
+    // n12: -($spacer * 3),
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.5),
+    // 2\.5: ($spacer * 0.625),
+    3: ($spacer * 0.75),
+    4: ($spacer * 1),
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.5),
+    7: ($spacer * 1.75),
+    8: ($spacer * 2),
+    9: ($spacer * 2.25),
+    10: ($spacer * 2.5),
+    11: ($spacer * 2.75),
+    12: ($spacer * 3),
+    13: ($spacer * 3.25),
+    14: ($spacer * 3.5),
+    15: ($spacer * 3.75),
+    16: ($spacer * 4),
+    18: ($spacer * 4.5),
+    20: ($spacer * 5),
+    22: ($spacer * 5.5),
+    24: ($spacer * 6),
+    28: ($spacer * 7),
+    30: ($spacer * 7.5),
+    32: ($spacer * 8),
+    34: ($spacer * 8.5),
+    35: ($spacer * 8.75),
+    36: ($spacer * 9),
+    40: ($spacer * 10),
+    44: ($spacer * 11),
+    48: ($spacer * 12),
+    50: ($spacer * 12.5),
+);
+
+$sizes: (
+    150: 150%,
+);
+
+$grid-columns: 48;
+$grid-gutter-width: 20px;
+
+// 1900px instead of 1920px and 1350px instead of 1366px
+// because some browsers report width as 1905px
+// if scrollbar is visible (I'm looking at you Safari)
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 400px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1100px,
+    xxl: 1200px,
+    xxxl: 1400px,
+    xxxxl: 1700px
+);
+
+$container-max-widths: (
+    xs: 375px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1060px,
+    xxl: 1160px,
+    xxxl: 1360px,
+    xxxxl: 1420px + $grid-gutter-width
+);
+
+// Footer
+$footer-height: (
+    xxs: 600px,
+    lg: 180px,
+    xl: 215px,
+);
+
+// Header
+$header-height: (
+    xxs: 125px,
+    lg: 180px,
+    xxxxl: 250px,
+);
+
+// Progressbar Height
+$progressbar-height: 4px;
+
+// jonsuh/hamburgers
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 55px;
+$hamburger-layer-height: 8px;
+$hamburger-layer-spacing: 8px;
+$hamburger-layer-color: #fff;
+$hamburger-types: (
+    spin
+);
+
+$nav-pills-link-active-bg: $colorMain2;
+$nav-pills-border-radius: 0;
+
+// Lightgallery
+$lg-path-fonts: '../../../node_modules/lightgallery/src/fonts';
+$lg-path-images: '../../../node_modules/lightgallery/src/img';

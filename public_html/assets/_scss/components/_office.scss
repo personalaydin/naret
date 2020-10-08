@@ -1,0 +1,51 @@
+.office {
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: #e9e9f2;
+        }
+
+        &:last-child {
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        &:after {
+            right: 20px;
+        }
+    }
+}
+
+.office-contact-item {
+
+}
+
+.office-contact-item--hover {
+    transition: background-color .3s;
+    
+    &:hover {
+        background-color: #f3f3fc;
+    }
+}
+
+.office-contact-item__icon {
+
+    svg {
+        fill: $colorMain;
+        width: 20px;
+        height: 20px;
+    }
+}

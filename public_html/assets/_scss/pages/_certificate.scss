@@ -1,0 +1,18 @@
+.page-certificate {
+    position: relative;
+    overflow: hidden;
+    background: #dddede;
+
+    @extend .minimum-full-height;
+}
+
+.page-certificate-fancy-bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -10vw;
+    width: 120vw;
+    height: 120vh;
+    background: #f4f4f4;
+    border-radius: 0% 100% 62% 38% / 75% 0% 100% 25% ;
+}

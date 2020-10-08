@@ -1,0 +1,40 @@
+// html tag will need overflow-x: hidden if you want to use these classes
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        .bg-container#{$infix}-left-none:before,
+        .bg-container#{$infix}-right-none:after {
+            content: normal;
+        }
+
+        .bg-container#{$infix}-left:before,
+        .bg-container#{$infix}-right:after {
+            content: '';
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            z-index: -50;
+        }
+
+        .bg-container#{$infix}-left:before {
+            right: 99%;
+        }
+
+        .bg-container#{$infix}-right:after {
+            left: 99%;
+        }
+
+        @each $colorName, $colorValue in $theme-colors {
+            .bg-container#{$infix}-left.bg-#{$colorName}:before {
+                background-color: $colorValue;
+            }
+
+            .bg-container#{$infix}-right.bg-#{$colorName}:after {
+                background-color: $colorValue;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--headerHeight);
+    z-index: 20;
+
+    .header__logo {
+
+        svg {
+            width: 120px;
+            height: 100px;
+
+
+            @include media-breakpoint-up(lg) {
+                width: 150px;
+                height: 125px;
+            }
+
+            @include media-breakpoint-up(xxxxl) {
+                width: 220px;
+                height: 190px;
+            }
+        }
+    }
+}
+
+.header-overflow {
+    height: var(--headerHeight);
+}
+
+.header--main2 {
+
+    .hamburger-inner {
+        &,
+        &::before,
+        &::after {
+            background-color: $colorMain2;
+        }
+    }
+}

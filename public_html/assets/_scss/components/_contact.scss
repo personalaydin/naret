@@ -1,0 +1,23 @@
+.contact-form {
+    box-shadow: 0 1px 43px 0 rgba(1, 1, 1, 0.2);
+}
+
+.contact-item {
+
+}
+
+.contact-item__icon {
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        fill: $colorMain;
+        width: 18px;
+        height: 18px;
+    }
+}

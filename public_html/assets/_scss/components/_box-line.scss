@@ -1,0 +1,33 @@
+.box-line {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -20vw;
+        width: 140vw;
+        top: 0;
+        height: 2px;
+        background: #cfd1d2;
+    }
+
+    @include media-breakpoint-up(md) {
+
+        &:before {
+            left: -50vw;
+        }
+
+        &:nth-child(2n) {
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: #cfd1d2;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+
+    @include media-breakpoint-down(lg) {
+        width: 45px;
+        height: 5px;
+    }
+}
+
+.hamburger-inner::before {
+
+    @include media-breakpoint-down(lg) {
+        top: -13px;
+    }
+}
+
+.hamburger-inner::after {
+
+    @include media-breakpoint-down(lg) {
+        bottom: -13px;
+    }
+}

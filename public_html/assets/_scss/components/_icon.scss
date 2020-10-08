@@ -1,0 +1,121 @@
+@each $color, $value in $theme-colors {
+    .icon-#{$color} {
+        background-color: $value;
+    }
+}
+
+$box-size: () !default;
+$box-size: map-merge(
+    (
+        '70': 70px,
+        '100': 100px,
+    ),
+    $box-size
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $value in $box-size {
+            .icon#{$infix}-#{$key} {
+                width: $value !important;
+                height: $value !important;
+            }
+        }
+    }
+}
+
+.icon-cow {
+    fill: #fff;
+    width: 50px;
+    height: 35px;
+
+    @include media-breakpoint-up(lg) {
+        width: 80px;
+        height: 55px;
+    }
+}
+
+.icon-circle {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+
+    @include media-breakpoint-up(lg) {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+.icon-control-check {
+    fill: #fff;
+    width: 35px;
+    height: 40px;
+
+    @include media-breakpoint-up(lg) {
+        width: 45px;
+        height: 60px;
+    }
+}
+
+.icon__rotateY {
+
+    svg {
+        transform: rotateY(150deg);
+    }
+}
+
+.icon-cow-partial {
+    $icon: &;
+
+    path, rect, polygon {
+        fill: #fff;
+        opacity: .4;
+    }
+
+    @for $i from 1 through 12 {
+        &#{$icon}.cow#{$i}, &#{$icon}.cow#{$i} {
+
+            path.cow#{$i}, path.hogget#{$i}, rect.hogget#{$i}, polygon.hogget#{$i} {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.icon-hogget-partial {
+    $icon: &;
+
+    path, rect, polygon {
+        fill: #fff;
+        opacity: .4;
+    }
+
+    @for $i from 1 through 12 {
+        &#{$icon}.hogget#{$i} {
+
+            path.hogget#{$i}, rect.hogget#{$i}, polygon.hogget#{$i} {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.icon-hogget-2-partial {
+    $icon: &;
+
+    path, rect, polygon {
+        fill: #fff;
+        opacity: .4;
+    }
+
+    @for $i from 1 through 12 {
+        &#{$icon}.hogget2-#{$i} {
+
+            path.hogget2-#{$i}, rect.hogget2-#{$i}, polygon.hogget2-#{$i} {
+                opacity: 1;
+            }
+        }
+    }
+}

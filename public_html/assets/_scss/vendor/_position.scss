@@ -1,0 +1,14 @@
+.position {}
+
+.position__live-stock {
+    position: relative;
+    z-index: 9;
+
+    @include media-breakpoint-up(lg) {
+        top: 70px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        top: 100px;
+    }
+}

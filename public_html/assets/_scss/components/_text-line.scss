@@ -1,0 +1,52 @@
+:root {
+    --textLineSize: 25px;
+    --textLineSizeSmall: 5px;
+
+    @include media-breakpoint-up(xs) {
+        --textLineSize: 30px;
+        --textLineSizeSmall: 7.5px;
+    }
+
+    @include media-breakpoint-up(sm) {
+        --textLineSize: 40px;
+        --textLineSizeSmall: 10px;
+    }
+
+    @include media-breakpoint-up(md) {
+        --textLineSize: 48px;
+        --textLineSizeSmall: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        --textLineSize: 52px;
+        --textLineSizeSmall: 20px;
+    }
+}
+
+.text-line {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background: currentColor;
+        left: 0;
+        bottom: -5px;
+        height: 3px;
+        width: var(--textLineSize);
+    }
+}
+
+@each $colorName, $colorValue in $theme-colors {
+    .text-line-#{$colorName}:after {
+        background: $colorValue;
+    }
+}
+
+.text-line--small {
+
+    &:after {
+        width: var(--textLineSizeSmall);
+    }
+}

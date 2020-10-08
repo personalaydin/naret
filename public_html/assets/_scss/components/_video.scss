@@ -1,0 +1,46 @@
+.video {}
+
+.video__home {
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        fill: $colorDarkGray;
+        width: 4vmax;
+        height: 4vmax;
+        min-width: 80px;
+        min-height: 80px;
+        transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+
+        @include media-breakpoint-up(lg) {
+            min-width: 120px;
+            min-height: 120px;
+        }
+
+        @include media-breakpoint-up(xxxxl) {
+            min-width: 150px;
+            min-height: 150px;
+        }
+    }
+
+    &.video__home--promotion-film {
+
+        svg {
+            fill: #fff;
+            width: 4vmax;
+            height: 4vmax;
+            min-width: 40px;
+            min-height: 40px;
+        }
+    }
+
+    &:hover {
+
+        svg {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$zIndex: () !default;
+$zIndex: map-merge(
+    (
+        1: 1,
+        2: 2,
+        3: 3,
+    ),
+    $zIndex
+);
+
+@each $key, $value in $zIndex {
+    .z-index-#{$key} {
+        z-index: $value !important;
+    }
+}

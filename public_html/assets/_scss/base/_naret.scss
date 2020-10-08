@@ -1,0 +1,35 @@
+// Header
+:root {
+    --headerHeight: #{map_get($header-height, xxs)};
+
+    @include media-breakpoint-up(lg) {
+        --headerHeight: #{map_get($header-height, lg)};
+    }
+
+    @include media-breakpoint-up(xxxxl) {
+        --headerHeight: #{map_get($header-height, xxxxl)};
+    }
+}
+
+// Footer
+:root {
+    --footerHeight: #{map_get($footer-height, xxs)};
+
+    @include media-breakpoint-up(lg) {
+        --footerHeight: #{map_get($footer-height, lg)};
+    }
+
+    @include media-breakpoint-up(xl) {
+        --footerHeight: #{map_get($footer-height, xl)};
+    }
+}
+
+.naret {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0 5px 20px -10px rgba(15, 25, 53, 0.15);
+
+    @extend .minimum-full-height;
+}
+
